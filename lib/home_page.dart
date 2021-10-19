@@ -15,72 +15,109 @@ class HomePage extends StatelessWidget {
               flex: 1,
               child: Column(children: [
                 Expanded(
-                    flex: 1,
-                    child: Column(children: [
+                  flex: 1,
+                  child: Column(
+                    children: [
+                      Expanded(
+                        flex: 1,
+                        child: Row(
+                          children: [
+                            Expanded(
+                              flex: 1,
+                              child: Container(color: Colors.orange),
+                            ),
+                            Expanded(
+                              flex: 1,
+                              child: Container(color: Colors.black),
+                            ),
+                            Expanded(
+                              flex: 1,
+                              child: Container(color: Colors.black),
+                            ),
+                          ],
+                        ),
+                      ),
                       Expanded(
                           flex: 1,
                           child: Row(children: [
                             Expanded(
-                                flex: 1,
-                                child: Container(color: Colors.orange)),
+                              flex: 1,
+                              child: Container(color: Colors.red),
+                            ),
                             Expanded(
-                                flex: 1, child: Container(color: Colors.black)),
+                              flex: 1,
+                              child: Container(color: Colors.black),
+                            ),
                             Expanded(
-                                flex: 1, child: Container(color: Colors.black)),
+                              flex: 1,
+                              child: Container(color: Colors.black),
+                            ),
                           ])),
                       Expanded(
-                          flex: 1,
-                          child: Row(children: [
+                        flex: 1,
+                        child: Row(
+                          children: [
                             Expanded(
-                                flex: 1, child: Container(color: Colors.red)),
+                              flex: 1,
+                              child: Container(color: Colors.pink),
+                            ),
                             Expanded(
-                                flex: 1, child: Container(color: Colors.black)),
+                              flex: 1,
+                              child: Container(color: Colors.blueAccent),
+                            ),
                             Expanded(
-                                flex: 1, child: Container(color: Colors.black)),
-                          ])),
-                      Expanded(
-                          flex: 1,
-                          child: Row(children: [
-                            Expanded(
-                                flex: 1, child: Container(color: Colors.pink)),
-                            Expanded(
-                                flex: 1,
-                                child: Container(color: Colors.blueAccent)),
-                            Expanded(
-                                flex: 1,
-                                child: Container(color: Colors.yellow)),
-                          ])),
-                    ])),
-                Expanded(flex: 1, child: Container(color: Colors.black)),
-                Expanded(flex: 1, child: Container(color: Colors.yellow)),
-                Expanded(flex: 1, child: Container(color: Colors.white))
+                              flex: 1,
+                              child: Container(color: Colors.yellow),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  flex: 1,
+                  child: Container(color: Colors.black),
+                ),
+                Expanded(
+                  flex: 1,
+                  child: Container(color: Colors.yellow),
+                ),
+                Expanded(
+                  flex: 1,
+                  child: Container(color: Colors.white),
+                )
               ]),
             ),
             Expanded(
-                flex: 3,
-                child: Container(
-                  color: Colors.pink,
-                )),
+              flex: 3,
+              child: Container(
+                color: Colors.pink,
+              ),
+            ),
             Container(
               width: _appConfig.rW(2),
               color: Colors.white,
             ),
             Expanded(
-                flex: 1,
-                child: Container(
-                  color: Colors.pink,
-                ))
+              flex: 1,
+              child: Container(
+                color: Colors.pink,
+              ),
+            )
           ],
         ),
         Positioned(
-            top: _appConfig.rH(54),
-            left: _appConfig.rW(10),
-            child: SizedBox(
-                width: _appConfig.rW(30),
-                height: _appConfig.rH(20),
-                child: Container(
-                  color: Colors.black.withOpacity(0.3),
-                ))),
+          top: _appConfig.rH(54),
+          left: _appConfig.rW(10),
+          child: SizedBox(
+            width: _appConfig.rW(30),
+            height: _appConfig.rH(20),
+            child: Container(
+              color: Colors.black.withOpacity(0.3),
+            ),
+          ),
+        ),
       ],
     ));
   }
