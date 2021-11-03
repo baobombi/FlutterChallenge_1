@@ -1,19 +1,18 @@
 import "package:flutter/material.dart";
-//import 'package:lab_challenge/home_page.dart';
-import 'package:lab_challenge/challenge_day1_practice_2.dart'; //class ScreenOne()
-import 'package:lab_challenge/challenge_day1_practice_2_2.dart'; //class ScreenTwo()
-import 'package:lab_challenge/challenge_day1_practice_2_3.dart'; //class ScreenThree()
-import 'package:lab_challenge/challenge_day1_practice_2_4.dart'; //class ScrrenFour()
+import 'package:lab_challenge/routes/route_generator.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key, @required abc}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: ScreenThree(),
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      onGenerateRoute: RouteGenerator.generateRoute,
     );
   }
 }

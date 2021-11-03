@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
-import 'responsive_screen/app_config.dart';
+import 'package:lab_challenge/config/app_sceen_config.dart';
 
-class ScreenFour extends StatelessWidget {
+class PracticeScreenOneNode4 extends StatefulWidget {
+  const PracticeScreenOneNode4({Key? key}) : super(key: key);
+  static const routeName = '/bai-tap-1-2-4';
+
+  @override
+  _PracticeScreenOneNode4 createState() => _PracticeScreenOneNode4();
+}
+
+class _PracticeScreenOneNode4 extends State<PracticeScreenOneNode4> {
   late AppConfig _appConfig;
   @override
   Widget build(BuildContext context) {

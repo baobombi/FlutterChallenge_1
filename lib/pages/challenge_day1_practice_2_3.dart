@@ -1,13 +1,21 @@
 import 'package:flutter/material.dart';
-import 'responsive_screen/app_config.dart';
+import 'package:lab_challenge/config/app_sceen_config.dart';
 
-class ScreenThree extends StatelessWidget {
+class PracticeScreenOneNode3 extends StatefulWidget {
+  const PracticeScreenOneNode3({Key? key}) : super(key: key);
+  static const routeName = '/bai-tap-1-2-3';
+
+  @override
+  _PracticeScreenOneNode3 createState() => _PracticeScreenOneNode3();
+}
+
+class _PracticeScreenOneNode3 extends State<PracticeScreenOneNode3> {
   late AppConfig _appConfig;
   @override
   Widget build(BuildContext context) {
     _appConfig = AppConfig(context);
 
-    _createWidget() {
+    Widget _createWidget() {
       return Expanded(
         flex: 10,
         child: Container(
@@ -16,18 +24,18 @@ class ScreenThree extends StatelessWidget {
       );
     }
 
-    _createSpacing() {
+    Widget _createSpacing() {
       return const Expanded(
         flex: 1,
         child: SizedBox(),
       );
     }
 
-    Widget _createRow(nunberRow) {
+    Widget _createRow(int numberRow) {
       List<Widget> results = [];
-      for (int i = 0; i < nunberRow; i++) {
+      for (int i = 0; i < numberRow; i++) {
         results.add(_createWidget());
-        if (i < nunberRow - 1) {
+        if (i < numberRow - 1) {
           results.add(
             _createSpacing(),
           );
@@ -39,7 +47,7 @@ class ScreenThree extends StatelessWidget {
       );
     }
 
-    List<Widget> _renderScreen(numberRow, numberColum) {
+    List<Widget> _renderScreen(int numberRow, int numberColum) {
       List<Widget> results = [];
       for (int i = 0; i < numberColum; i++) {
         results.add(_createRow(numberRow));
