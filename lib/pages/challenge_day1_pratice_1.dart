@@ -9,6 +9,7 @@ class PracticeScreenOne extends StatefulWidget {
 }
 
 class _PracticeScreenOne extends State<PracticeScreenOne> {
+  //late AppConfig _appConfig;
   late AppConfig _appConfig;
 
   @override
