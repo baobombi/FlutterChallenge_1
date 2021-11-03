@@ -25,7 +25,6 @@ class _ChatViewState extends State<ChatView> {
           IconButton(
             iconSize: 30,
             icon: const Icon(Icons.add),
-            //tooltip: 'Add Groupppp',
             onPressed: () {},
           ),
         ],
