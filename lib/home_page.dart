@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'responsive_screen/app_config.dart';
+import 'package:lab_challenge/config/app_sceen_config.dart';
 
 class HomePage extends StatelessWidget {
   late AppConfig _appConfig;
