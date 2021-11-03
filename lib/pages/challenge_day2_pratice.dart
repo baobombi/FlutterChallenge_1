@@ -13,6 +13,7 @@ class _ChatViewState extends State<ChatView> {
   @override
   Widget build(BuildContext context) {
     //_appConfig = AppConfig(context);
+    //_appConfig = AppConfig(context);
 
     return Scaffold(
       backgroundColor: AppColors.primary,
